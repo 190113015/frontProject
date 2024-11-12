@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="search" placeholder="Поиск фильма..." />
+
+    <div class="dropdown">
+      <label for="sort">Сортировать по:</label>
+      <select id="sort" onchange="sortMovies()">
+        <option value="popularity">Популярность</option>
+        <option value="release_date">Дата релиза</option>
+        <option value="rating">Рейтинг</option>
+      </select>
+    </div>
+
+    <div class="movie-grid" id="movieGrid"></div>
+
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <h2 id="movieTitle"></h2>
+        <p><strong>Сюжет:</strong> <span id="movieSynopsis"></span></p>
+        <p><strong>Рейтинг:</strong> <span id="movieRating"></span></p>
+        <p>
+          <strong>Продолжительность:</strong>
+          <span id="movieRuntime"></span> минут
+        </p>
+        <p><strong>Дата релиза:</strong> <span id="movieReleaseDate"></span></p>
+        <h3>Актеры:</h3>
+        <ul id="movieCast"></ul>
+        <button id="addToWatchlist" class="watchlist-button">
+          Добавить в Watchlist
+        </button>
+        <button onclick="closeModal()" class="watchlist-button">Закрыть</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

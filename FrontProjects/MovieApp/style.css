@@ -1,0 +1,121 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+#search {
+  width: 70%;
+  padding: 12px;
+  margin: 15px auto;
+  display: block;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 10px;
+}
+
+.movie-card {
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 15px;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-card h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #f0f0f0;
+}
+
+.movie-card p {
+  font-size: 10px;
+  color: #ddd;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 40px;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #333;
+  padding: 25px;
+  border-radius: 10px;
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 35px;
+}
+
+.modal-content button {
+  padding: 12px 24px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.modal-content button:hover {
+  background-color: #b4070d;
+}
+
+.watchlist-button {
+  background-color: #e50914;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+
+.watchlist-button:hover {
+  background-color: #b4070d;
+}
+
+.dropdown {
+  margin: 20px;
+  text-align: center;
+}
+
+.dropdown select {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  background-color: #444;
+  color: white;
+  font-size: 1em;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reciepe App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="text" id="search" placeholder="Search for recipes..." />
+
+    <div class="random-recipes"></div>
+
+    <div class="recipe-grid" id="recipeGrid"></div>
+
+    <div id="recipeModal" class="modal">
+      <div class="modal-content">
+        <h2 id="recipeTitle"></h2>
+        <img
+          id="recipeImage"
+          src=""
+          alt=""
+          style="width: 100%; border-radius: 5px"
+        />
+        <h3>Ingredients</h3>
+        <ul id="ingredientsList"></ul>
+        <h3>Instructions</h3>
+        <ol id="instructionsList"></ol>
+        <h3>Nutritional Information</h3>
+        <p id="nutritionalInfo"></p>
+        <button class="favorites-button" id="addToFavorites">
+          Add to Favorites
+        </button>
+        <button onclick="closeModal()" class="favorites-button">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
